@@ -19,9 +19,63 @@
             <h2>报名说明</h2>
             <p>请仔细阅读理解说明</p>
         </section>
+
         <section id="form">
-            <h2>报名表单</h2>
-            <p>(表单下一步填在这里)</p>
+             <h2>报名表单</h2>
+                <form action="#" method="get">
+                    <p>
+                        <label for="name">姓名（需与护照英文一致）</label><br>
+                         <input type="text" id="name" name="name" required maxlength="30">
+                    </p>
+                    <p>
+                        <label for="birth">出生日期（YYYY-MM-DD）</label><br>
+                        <input type="text" id="birth" name="birth" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" placeholder="例如 2005-08-18" required>
+                    </p>
+                    <p>
+                       <label for="mail">邮箱（Weverse 账号）</label><br>
+                       <input type="email" id="mail" name="mail" required>
+                    </p>
+                    <p>
+                       <label for="phone">手机号码</label><br>
+                       <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="11位手机号" required>
+                    </p>
+                    <p>
+                       <label for="kakao">KakaoTalk ID</label><br>
+                       <input type="text" id="kakao" name="kakao" required>
+                    </p>
+                    <p>
+                       <label for="qty">购买专辑数量</label><br>
+                       <input type="number" id="qty" name="qty" min="1"  value="1">
+                    </p>
+                    <p>
+                        购买版本<br>
+                        <label><input type="radio" name="version" value="fansign" required> VIDEO CALL FANSIGN 版</label><br>
+                        <label><input type="radio" name="version" value="weverse"> Weverse Albums 版</label><br>
+                        <label><input type="radio" name="version" value="other"> 其他版本（注：其他版本无法报名）</label>
+                    </p>
+                    <p>
+                        <label for="member">最想见到的成员</label><br>
+                        <select id="member" name="member" required>
+                            <option value="">请选择</option>
+                            <option value="martin">MARTIN</option>
+                            <option value="james">JAMES（赵雨凡）</option>
+                            <option value="juhoon">JUHOON（金主训）</option>
+                            <option value="seonghyeon">SEONGHYEON（严成玹）</option>
+                            <option value="keonho">KEONHO（安乾镐）</option>
+                        </select>
+                    </p>
+                    <p>
+                          <label for="question">想对成员说的话或提问（200字以内）</label><br>
+                          <textarea id="question" name="question" rows="4" maxlength="200"  placeholder="每位成员约1分钟，请尽量简短"></textarea>
+                    </p>
+                    <p>
+                           <label><input type="checkbox" name="agree" value="yes" required>
+                             我已阅读并同意个人信息收集与使用说明（姓名、生日、联系方式仅用于本人核验）</label>
+                    </p>
+                    <p>
+                            <button type="submit">提交报名</button>
+                    </p>
+
         </section>
     </main>
     <footer>
