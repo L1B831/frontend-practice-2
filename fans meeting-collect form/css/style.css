@@ -1,0 +1,122 @@
+/* CORTIS 签售会报名页样式 */
+body {
+    font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333;
+    line-height: 1.8;
+    background-color: #f7faf8;
+}
+
+header {
+    text-align: center;
+    border-bottom: 3px solid #3cb371;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #2e7d4f;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #666;
+    margin: 0;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+nav a {
+    display: inline-block;
+    margin: 0 8px;
+    padding: 6px 18px;
+    color: #2e7d4f;
+    text-decoration: none;
+    border: 1px solid #3cb371;
+    border-radius: 20px;
+}
+
+nav a:hover {
+    background-color: #3cb371;
+    color: #fff;
+}
+
+section {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px 28px;
+    margin-bottom: 24px;
+}
+
+h2 {
+    color: #2e7d4f;
+    border-left: 5px solid #3cb371;
+    padding-left: 10px;
+}
+
+form p {
+    margin: 14px 0;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px 10px;
+    margin-top: 4px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: inherit;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #3cb371;
+    box-shadow: 0 0 4px rgba(60, 179, 113, 0.4);
+}
+
+/* radio 和 checkbox 不需要整行宽度 */
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+    margin-right: 6px;
+    margin-top: 0;
+}
+
+/* 单选/多选选项的 label 不加粗 */
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    font-weight: normal;
+}
+
+button {
+    background-color: #3cb371;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 36px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2e7d4f;
+}
+
+footer {
+    text-align: center;
+    color: #888;
+    font-size: 13px;
+    margin-top: 30px;
+    padding-top: 12px;
+    border-top: 1px solid #ddd;
+}
